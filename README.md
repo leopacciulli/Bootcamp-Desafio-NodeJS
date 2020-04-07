@@ -1,7 +1,7 @@
 <img alt="GoStack" src="./src/assets/gostack.png" />
 
 <h3 align="center">
-   :rocket: Desafio 02: Conceitos do Node.js :rocket:
+   Desafio 02: Conceitos do Node.js
 </h3>
 
 <p align="center">“Não espere para plantar, apenas tenha paciência para colher”!</blockquote>
