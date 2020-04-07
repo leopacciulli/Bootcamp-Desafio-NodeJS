@@ -12,11 +12,11 @@
 
 - Uma aplicação para armazenar repositórios do seu portfólio, permitindo a criação, listagem, atualização e remoção dos repositórios, e além disso permite também que os repositórios possam receber "likes".
 
+<br>
+
 ### :checkered_flag: Startando o projeto
 
 1° Clonar: `git clone https://github.com/leopacciulli/Bootcamp-Desafio-NodeJS.git`
-
-<br>
 
 2° Rodar o back end em http://localhost:3333:
 
@@ -25,7 +25,6 @@ $ cd Bootcamp-Desafio-NodeJS
 $ npm install
 $ yarn/npm start
 ```
-<br>
 
 3° Rodar os testes:
 
