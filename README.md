@@ -12,9 +12,7 @@
 
 - Uma aplicação para armazenar repositórios do seu portfólio, permitindo a criação, listagem, atualização e remoção dos repositórios, e além disso permite também que os repositórios possam receber "likes".
 
-<br>
-
-### :checkered_flag: Startando o projeto
+## :checkered_flag: Startando o projeto
 
 1° Clonar: `git clone https://github.com/leopacciulli/Bootcamp-Desafio-NodeJS.git`
 
@@ -32,7 +30,6 @@ $ yarn/npm start
 $ cd Bootcamp-Desafio-NodeJS 
 $ yarn/npm test
 ```
-
 ---
 
 Desenvolvido por: [Leonardo Pacciulli](https://www.linkedin.com/in/leonardo-pacciulli-a4b86a92/)
