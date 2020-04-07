@@ -7,11 +7,12 @@
 <p align="center">“Não espere para plantar, apenas tenha paciência para colher”!</blockquote>
 
 <br>
-<br>
 
-<h3 align="center">
-  :checkered_flag: Startando o projeto
-</h3>
+## :rocket: Sobre o desafio
+
+- Uma aplicação para armazenar repositórios do seu portfólio, permitindo a criação, listagem, atualização e remoção dos repositórios, e além disso permite também que os repositórios possam receber "likes".
+
+### :checkered_flag: Startando o projeto
 
 1° Clonar: `git clone https://github.com/leopacciulli/Bootcamp-Desafio-NodeJS.git`
 
