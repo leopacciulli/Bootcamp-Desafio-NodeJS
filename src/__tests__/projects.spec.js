@@ -1,23 +1,20 @@
 const request = require("supertest");
 const app = require("../app");
-const { uuid, isUuid } = require("uuidv4");
+const { isUuid } = require("uuidv4");
 
 describe("Projects", () => {
   it("should be able to create a new repository", async () => {
     const response = await request(app)
       .post("/repositories")
       .send({
-        id: uuid(),
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
-        techs: ["Node", "Express", "TypeScript"],
-        likes: 0
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     expect(isUuid(response.body.id)).toBe(true);
 
     expect(response.body).toMatchObject({
-      id: response.body.id,
       url: "https://github.com/Rocketseat/umbriel",
       title: "Umbriel",
       techs: ["Node", "Express", "TypeScript"],
@@ -29,11 +26,9 @@ describe("Projects", () => {
     const repository = await request(app)
       .post("/repositories")
       .send({
-        id: uuid(),
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
-        techs: ["Node", "Express", "TypeScript"],
-        likes: 0
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     const response = await request(app).get("/repositories");
@@ -87,11 +82,9 @@ describe("Projects", () => {
     const repository = await request(app)
       .post("/repositories")
       .send({
-        id: uuid(),
         url: "https://github.com/Rocketseat/umbriel",
         title: "Umbriel",
-        techs: ["React", "ReactNative", "TypeScript", "ContextApi"],
-        likes: 0
+        techs: ["React", "ReactNative", "TypeScript", "ContextApi"]
       });
 
     const response = await request(app)
@@ -109,9 +102,9 @@ describe("Projects", () => {
     const response = await request(app)
       .post("/repositories")
       .send({
-        title: "Front-end em React",
-        description: "Um software para listagem de projetos em React",
-        owner: "Diego Fernandes"
+        url: "https://github.com/Rocketseat/umbriel",
+        title: "Umbriel",
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     await request(app)

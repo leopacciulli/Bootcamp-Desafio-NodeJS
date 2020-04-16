@@ -1,5 +1,4 @@
 const request = require("supertest");
-const { uuid } = require("uuidv4");
 const app = require("../app");
 
 describe("Likes", () => {
@@ -7,17 +6,15 @@ describe("Likes", () => {
     const repository = await request(app)
       .post("/repositories")
       .send({
-        id: uuid(),
-        title: "Hair Shop",
-        url: "https://github.com/leopacciulli/Hair-Shop",
-        techs: ["ReactJS"],
-        likes: 0
+        url: "https://github.com/Rocketseat/umbriel",
+        title: "Umbriel",
+        techs: ["Node", "Express", "TypeScript"]
       });
 
     let response = await request(app).post(
       `/repositories/${repository.body.id}/like`
     );
-    
+
     expect(response.body).toMatchObject({
       likes: 1
     });
